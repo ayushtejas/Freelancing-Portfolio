@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+  /* height: 100vh;
+  width: 200vh; */
+  background: #000;
+  text-align: center;
+}
+section{
+/* height: 100vh;
+width: 200vh; */
+
+}
+span{
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%
+  {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10%{
+    opacity: 0.8;
+  }
+  90%{
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(1) translateY(-500%) rotate(360deg);
+    opacity: 0.8;
+  }
+
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  transform-style: preserve-3d;
+  margin-top: 5%;
+  margin-bottom: 20%;
+
+}
+.container .box{
+  position: relative;
+  width: 350px;
+  height: 450px;
+  margin: 40px;
+  background-image:url('https://c4.wallpaperflare.com/wallpaper/662/618/496/natur-2560x1600-sceneries-wallpaper-preview.jpg');
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+.container .box::before{
+  content:'Welcome On Board with';
+  top:20px;
+  left:20px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  opacity:0.4;
+  transition: 0.5s;
+}
+.container .box::after{
+  content:'Techy Spider';
+  bottom:20px;
+  right:20px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  opacity:0.6;
+  transition: 0.5s;
+}
+.container .box:hover::before{
+  opacity: 0.9;
+}
+.container .box:hover::after{
+  opacity: 1;
+}
+.container .box .buy{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #fff;
+  background: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.container .box:hover .buy{
+  bottom: 30px;
+  opacity: 1;}
