@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="myindex.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     </head>
   <body>
 <div class="ek">
@@ -40,6 +42,14 @@
       }
     setInterval(createsquare,150)
   </script>
+	  <script>
+$(document).ready(function(){
+  if($(window).width() <= 800) {
+window.location = "blank.html";
+
+}
+});
+</script>
   <script type="text/javascript" src="vanilla-tilt.min.js"></script>
   <script type="text/javascript">
     VanillaTilt.init(document.querySelector(".box"), {
