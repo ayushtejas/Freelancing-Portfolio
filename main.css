@@ -103,6 +103,17 @@ margin-left: 0; }}
       flex: 100%;
     }
   }
+@media(max-width:690px){
+  .services .serv-content .card{
+    width: 300px ;
+    background-image:  url('https://wallpapercave.com/wp/wp7567543.jpg');
+    text-align: center;
+    border-radius: 13px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+}
   .services .serv-content .card{
     width: calc(50%-10px);
     margin-bottom: 20px;
