@@ -19,7 +19,7 @@
   position: relative;
 }
 
-a{
+.link_wrapper a{
   display: block;
   width: 250px;
   height: 50px;
@@ -57,14 +57,14 @@ a{
   transition: all .35s;
 }
 
-a:hover{
+.link_wrapper a:hover{
   width: 200px;
   border: 3px solid crimson;
   background: transparent;
   color: crimson;
 }
 
-a:hover + .icon{
+.link_wrapper a:hover + .icon{
   border: 3px solid crimson;
   right: -25%;
 }
@@ -72,9 +72,27 @@ h1 {
   text-align: center;
   margin-top: 15%;
 }
+.fiverr-seller-widget{
+  margin-left: 43%;
+  margin-top: 0%;
+  margin-bottom: 0%
+}
     </style>
   </head>
   <body>
+    <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+         <a itemprop='url' href=https://www.fiverr.com/ayushkumar27 rel="nofollow" target="_blank" style='display: inline-block;'>
+            <div class='fiverr-seller-content' id='fiverr-seller-widget-content-48b83735-f779-417b-8836-8b1cdd1d741c' itemprop='contentURL' style='display: none;'></div>
+            <div id='fiverr-widget-seller-data' style='display: none;'>
+                <div itemprop='name' >ayushkumar27</div>
+                <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                <div itemprop='jobtitle'>Seller</div>
+                <div itemprop='description'>With vast experience in front-end and back-end technologies, I have successfully delivered many projects over the years. I have worked on several projects coping up with the industrial demands and we regularly upgrade our skills with the newer technologies. So, with our vast experiences and knowledge I'm confident to provide you with the website you need. Get your business online with tailored IT solutions and web development services for every industry and in every vertical.</div>
+            </div>
+        </a>
+    </div>
+
+    <script id='fiverr-seller-widget-script-48b83735-f779-417b-8836-8b1cdd1d741c' src='https://widgets.fiverr.com/api/v1/seller/ayushkumar27?widget_id=48b83735-f779-417b-8836-8b1cdd1d741c' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
     <h1>Check out our resumes.</h1>
     <div class="wrapper">
   <div class="link_wrapper">
@@ -87,5 +105,10 @@ h1 {
   </div>
 
 </div>
+<!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+
+
+
   </body>
 </html>
